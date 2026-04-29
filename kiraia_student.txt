@@ -1,0 +1,15 @@
+docker 命令： docker-compose up -d 
+			docker-compose （老版工具）或 docker compose （新版Docker子命令）
+专门用来管理“多个容器配合工作”的应用。它读的就是你当前目录下的 docker-compose.yml。
+
+up
+创建并启动 docker-compose.yml 里定义的所有服务容器。
+如果镜像还没下载，它会先自动拉取镜像（比如你遇到的拉取 lss233/kirara-agent-framework 那一步），然后再启动容器。
+
+-d（--detach）
+让容器在后台运行，不占用当前终端。去掉 -d 的话，你按 Ctrl+C 就会停掉服务。
+
+
+目前已经可以通过http:IP:端口号进行登录
+
+	
