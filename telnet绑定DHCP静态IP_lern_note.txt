@@ -1,0 +1,20 @@
+1.进入telnet：
+	1.win+r打开【运行】
+	2.输入telnet回车
+2. 登录核心交换机
+	opne 交换机IP
+3.查看已使用的IP（每次都需查看一遍，以免冲突）
+	dis ip pool interface vlanifXXX used
+4.释放已经绑定的地址，并查看需要的MAC地址
+	reset ip pool interface vlanifXXX IP地址
+5.进入编辑页面
+	system-view
+	或
+	sy
+	输入后会看见光标前的<XXXXX>变成[XXXXX]
+6.输入需要修改的Vlan
+	interface vlanif XXX
+7.对MAC地址绑定静态IP
+	dhcp server static-bind ip-address IP地址 mac-address MAC地址
+	
+
